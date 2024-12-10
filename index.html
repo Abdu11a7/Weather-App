@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather</title>
+    <link rel="shortcut icon" href="logo@2x.png" type="image/x-icon" />
+    <link rel="stylesheet" href="CSS/all.min.css" />
+    <link rel="stylesheet" href="CSS/bootstrap.min.css" />
+    <link rel="stylesheet" href="CSS/style.css" />
+  </head>
+  <body class="bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+        <a
+          class="navbar-brand d-flex justify-content-center align-items-center gap-2"
+          href="#"
+          ><img src="logo@2x.png" width="70px" alt="" /> Weather</a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarTogglerDemo01"
+          aria-controls="navbarTogglerDemo01"
+          aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 gap-4">
+            <li class="nav-item">
+              <a
+                class="nav-link active fs-6 fw-semibold"
+                aria-current="page"
+                href="#"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fs-6 fw-semibold" aria-current="page" href="#"
+                >News</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fs-6 fw-semibold" aria-current="page" href="#"
+                >Live Cameras</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fs-6 fw-semibold" aria-current="page" href="#"
+                >Photos</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fs-6 fw-semibold" aria-current="page" href="#"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <header class="py-5">
+      <div class="container">
+        <form class="d-flex justify-content-center align-items-center gap-3">
+          <input
+            type="text"
+            placeholder="Enter A City"
+            id="cityInput"
+            class="w-75 p-2 rounded-2 border-0 fs-5" />
+          <button
+            type="submit"
+            id="btn"
+            class="border-0 fs-6 text-white rounded-2">
+            Find
+          </button>
+        </form>
+        <main class="mt-5 weather">
+          <div class="container">
+            <div class="row rounded-2 overflow-hidden">
+              <div class="main-card text-white p-0 col-lg-4">
+                <div class="inner text-light">
+                  <div
+                    class="day-info text-white-50 d-flex justify-content-between align-items-center p-2">
+                    <p class="m-0 mainDayName"></p>
+                    <p class="m-0 mainDayDate"></p>
+                  </div>
+                  <div class="mainCity-info text-center">
+                    <p class="mainCityName h1 text-white-50 my-3"></p>
+                    <p class="mainCityTemp my-3 fw-bolder"></p>
+                    <p class="mainEmoji my-3">🌞</p>
+                    <p class="mainDesc my-3 h3 fw-medium"></p>
+                    <div
+                      class="temp-info d-flex text-white-50 justify-content-center align-items-center flex-wrap mb-3 gap-2">
+                      <div class="rain-info my-3">
+                        <i class="fa-solid fa-umbrella me-1 fa-2x"></i
+                        ><span class="rain h4"></span>
+                      </div>
+                      <div class="wind-info">
+                        <i class="fa-solid fa-wind me-1 fa-2x"></i>
+                        <span class="wind h4"></span>
+                      </div>
+
+                      <span class="dirction h4 m-0"></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="sub-card-1 text-white p-0 col-lg-4 bg-dark">
+                <div class="inner text-light">
+                  <div class="day-info text-white-50 text-center p-2">
+                    <p class="m-0 dayName_1"></p>
+                  </div>
+                  <div class="city-info text-center mt-5">
+                    <p class="emoji_1 my-3 h1">🌞</p>
+                    <p class="cityTempMax_1 h1 my-3 fw-bolder"></p>
+                    <p class="cityTempMin_1 h3 my-3 text-white-50"></p>
+                    <p class="desc_1 my-3 h6 fw-medium"></p>
+                  </div>
+                </div>
+              </div>
+              <div class="sub-card-2 text-white p-0 col-lg-4">
+                <div class="inner text-light">
+                  <div class="day-info text-white-50 text-center p-2">
+                    <p class="m-0 dayName_2"></p>
+                  </div>
+                  <div class="city-info text-center mt-5">
+                    <p class="emoji_2 my-3 h1">🌞</p>
+                    <p class="cityTempMax_2 h1 my-3 fw-bolder"></p>
+                    <p class="cityTempMin_2 h3 my-3 text-white-50"></p>
+                    <p class="desc_2 my-3 h6 fw-medium"></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </main>
+      </div>
+    </header>
+    <script src="JS/bootstrap.bundle.min.js"></script>
+    <script src="JS/main.js"></script>
+  </body>
+</html>

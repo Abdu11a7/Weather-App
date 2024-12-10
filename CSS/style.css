@@ -1,0 +1,91 @@
+:root {
+  --main-color: #05a2da;
+  --main-color-dark: #0c96c8;
+  --main-shadow: 0 0 0 0.25rem #1197c8ab;
+  --main-transtion: all 0.3s;
+}
+
+.navbar-toggler:focus {
+  box-shadow: var(--main-shadow);
+}
+
+.nav-link {
+  color: white;
+  transition: var(--main-transtion);
+  border: 2px solid transparent;
+  border-radius: 10px;
+}
+.nav-link:hover {
+  color: var(--main-color);
+}
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link.show {
+  color: var(--main-color);
+}
+.navbar-nav {
+  text-align: center;
+}
+header {
+  min-height: 55vh;
+  background: linear-gradient(to left, rgb(0, 0, 0, 50%), rgb(0, 0, 0, 50%)),
+    url(../banner.png);
+  background-position: center center;
+  background-size: cover;
+}
+#btn {
+  background-color: var(--main-color);
+  cursor: pointer;
+  padding: 0.8rem 1.5rem;
+  transition: var(--main-transtion);
+  font-size: 1.2rem;
+  letter-spacing: 1.1px;
+}
+#btn:hover {
+  background-color: var(--main-color-dark);
+}
+input {
+  transition: var(--main-transtion);
+  outline: none;
+}
+input:focus {
+  box-shadow: var(--main-shadow);
+}
+.main-card,
+.sub-card-2 {
+  background-color: #323544;
+}
+.day-info {
+  background-color: #262936;
+}
+.mainCityTemp {
+  font-size: 4rem;
+}
+.mainEmoji {
+  font-size: 4rem;
+}
+
+@media (min-width: 992px) {
+  .nav-link:hover {
+    color: var(--main-color);
+    border-color: var(--main-color);
+  }
+  .navbar-nav .nav-link.active,
+  .navbar-nav .nav-link.show {
+    color: var(--main-color);
+    border-color: var(--main-color);
+  }
+}
+@media (max-width: 991px) {
+  .navbar-nav {
+    gap: 0 !important;
+    background-color: #262936;
+    border-radius: 10px;
+    margin-top: 15px;
+  }
+  .nav-item {
+    padding: 0.6rem 0;
+  }
+  .nav-item:not(:last-child) {
+    border-bottom: 1px solid #029ed91f;
+  }
+}
