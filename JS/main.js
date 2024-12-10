@@ -26,7 +26,7 @@ window.addEventListener("load", function () {
 });
 async function getWeatherDataByLocation(lat, lon) {
   const response = await fetch(
-    `http://api.weatherapi.com/v1/forecast.json?key=${apiKey}&q=${lat},${lon}&days=3`
+    `https://api.weatherapi.com/v1/forecast.json?key=${apiKey}&q=${lat},${lon}&days=3`
   );
   if (!response.ok) {
     throw new Error("Failed to fetch weather data");
@@ -50,7 +50,7 @@ weatherForm.addEventListener("submit", async function (e) {
 
 async function getWeatherData(city) {
   const respnse = await fetch(
-    `http://api.weatherapi.com/v1/forecast.json?key=${apiKey}&q=${city}&days=3`
+    `https://api.weatherapi.com/v1/forecast.json?key=${apiKey}&q=${city}&days=3`
   );
   if (!respnse.ok) {
     throw new Error(`${respnse}`);
